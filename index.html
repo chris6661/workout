@@ -5,28 +5,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href = "style.css">
-    <title>Document</title>
+    <title>Workout Tracker</title>
 </head>
 <body>
     
     <div class = "header">
-        <h1>HEADER</h1>
+        <h1>Workout Tracker</h1>
     </div>
 
     <div class = "navbar">
         <h1>NAVBAR</h1>
+        <!-- navbar items -->
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
     </div>
 
     <div class = "about">
         <h1>ABOUT</h1>
     </div>
 
-    <div class = "workout">
-        <h1>WORKOUT</h1>
+    <div class = "prev-workout">
+        <h1>PREVIOUS WORKOUT</h1>
+        <!-- columns with previous workout exercise, weight, and reps -->
+            <table class="workout-table"> 
+                <th>Exercise</th>
+                <th>Weight</th>
+                <th>Reps</th>
+
+                <tr>
+                    <td>Bench Press</td>
+                    <td>200</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>Squat</td>
+                    <td>200</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>Deadlift</td>
+                    <td>200</td>
+                    <td>5</td>
+                </tr>
+
+            </table>
+        <!-- first round single exercise, second round multiple exercies, third round full workout -->
     </div>
 
     <div class = "exercise">
         <h1>EXERCISE</h1>
+
+        <!-- pull in exercise info with api here -->
+
     </div>
 
     <div class = "footer">

@@ -1,22 +1,44 @@
+/****** HEADER ******/
+
 .header {
     color: red; 
 }
+
+/****** NAV ******/
 
 .nav {
     color: blue;
 }
 
+/****** ABOUT ******/
+
 .about {
     color: green;
 }
 
-.workout {
+/****** WORKOUT ******/
+
+.prev-workout {
     color: purple;
 }
+
+.prev-workout table {
+    width: 75%; 
+    margin: auto;
+}
+
+th, td, tr {
+    border: 3px solid blue;
+    text-align: center;
+}
+
+/****** EXERCISE SECTION ******/
 
 .exercise {
     color: orange;
 }
+
+/****** FOOTER ******/
 
 .footer {
     color: green;
