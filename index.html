@@ -33,21 +33,29 @@
                 <th>Exercise</th>
                 <th>Weight</th>
                 <th>Reps</th>
+                <th>One Rep Max</th>
 
+                
                 <tr>
                     <td>Bench Press</td>
                     <td>200</td>
                     <td>5</td>
+                    <td>250</td>
+
                 </tr>
                 <tr>
                     <td>Squat</td>
                     <td>200</td>
                     <td>5</td>
+                    <td>250</td>
+
                 </tr>
                 <tr>
                     <td>Deadlift</td>
                     <td>200</td>
                     <td>5</td>
+                    <td>250</td>
+
                 </tr>
 
             </table>
@@ -56,6 +64,15 @@
 
     <div class = "exercise">
         <h1>EXERCISE</h1>
+
+            <!-- 25%, 50%, 75% percentage calculator for one rep max -->
+            <form name="myform" action="" method="get">
+                Input One Rep Max<input type="text" name="input_amount" />
+                25%<input type="text" name="25percent_amount" />
+                <input type="submit" value="Calculate Percent"   onclick="calculatePercentage();">
+                </form>
+                
+                
 
             <!-- search box -->
             <form class="form" role="search">
