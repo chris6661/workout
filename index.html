@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href = "style.css">
+    <link rel="stylesheet" href="style.css">
     <title>Workout Tracker</title>
 </head>
+
 <body>
-    
-    <div class = "header">
+
+    <div class="header">
         <h1>Workout Tracker</h1>
     </div>
 
-    <div class = "navbar">
+    <div class="navbar">
         <h1>NAVBAR</h1>
         <!-- navbar items -->
         <ul>
@@ -22,76 +24,86 @@
             <li><a href="contact.html">Contact</a></li>
     </div>
 
-    <div class = "about">
+    <div class="about">
         <h1>ABOUT</h1>
     </div>
 
-    <div class = "prev-workout">
+    <div class="prev-workout">
         <h1>PREVIOUS WORKOUT</h1>
         <!-- columns with previous workout exercise, weight, and reps -->
-            <table class="workout-table"> 
-                <th>Exercise</th>
-                <th>Weight</th>
-                <th>Reps</th>
-                <th>One Rep Max</th>
+        <table class="workout-table">
+            <th>Exercise</th>
+            <th>Weight</th>
+            <th>Reps</th>
+            <th>One Rep Max</th>
 
-                
-                <tr>
-                    <td>Bench Press</td>
-                    <td>200</td>
-                    <td>5</td>
-                    <td>250</td>
 
-                </tr>
-                <tr>
-                    <td>Squat</td>
-                    <td>200</td>
-                    <td>5</td>
-                    <td>250</td>
+            <tr>
+                <td>Bench Press</td>
+                <td>200</td>
+                <td>5</td>
+                <td>250</td>
 
-                </tr>
-                <tr>
-                    <td>Deadlift</td>
-                    <td>200</td>
-                    <td>5</td>
-                    <td>250</td>
+            </tr>
+            <tr>
+                <td>Squat</td>
+                <td>200</td>
+                <td>5</td>
+                <td>250</td>
 
-                </tr>
+            </tr>
+            <tr>
+                <td>Deadlift</td>
+                <td>200</td>
+                <td>5</td>
+                <td>250</td>
 
-            </table>
+            </tr>
+
+        </table>
         <!-- first round single exercise, second round multiple exercies, third round full workout -->
     </div>
 
-    <div class = "exercise">
+    <div class="exercise">
         <h1>EXERCISE</h1>
 
-            <!-- 25%, 50%, 75% percentage calculator for one rep max -->
-            <form name="myform" action="" method="get">
-                Input One Rep Max<input type="text" name="input_amount" />
-                25%<input type="text" name="25percent_amount" />
-                <input type="submit" value="Calculate Percent"   onclick="calculatePercentage();">
-                </form>
-                
-                
+        <!-- 25%, 50%, 75% percentage calculator for one rep max -->
+        <h1>Percentage Calculator</h1>
 
-            <!-- search box -->
-            <form class="form" role="search">
-                <input type="search" id="query" name="q"
-                 placeholder="Search..."
-                 aria-label="Search through site content">
-                <button>Search</button>
-              </form>
-            <!-- pull in exercise info with api here -->
+        <div>
+
+            <!-- Defines a field for entering a number-->
+            <h2> Enter percent to find weight of one rep max: <input type="number" id="percent" />%  one rep max:
+                <input type="number" id="num" />?
+            </h2>
+
+            <!-- onclick event is to call the function when
+            user click on the button-->
+            <button onclick="percentage_1()">Calculate</button><br>
+
+            <!-- Read-only input field to display 
+            output and cannot be modified -->
+            <input type="text" id="value1" readonly />
+        </div>
+
+
+        <!-- search box -->
+        <form class="form" role="search">
+            <input type="search" id="query" name="q" placeholder="Search..." aria-label="Search through site content">
+            <button>Search</button>
+        </form>
+        <!-- pull in exercise info with api here -->
 
     </div>
 
-    <div class = "footer">
+    <div class="footer">
         <h1>FOOTER</h1>
     </div>
 
-    <p id = "demo"></p>
+    <p id="demo"></p>
 
-    <script src = "app.js"></script>
+    <script src="app.js"></script>
 
 </body>
+
 </html>

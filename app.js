@@ -1,11 +1,11 @@
-// percent calculator
-// function percentage(num, per) {
-//     return (num / 100) * per;
-// }
+// one rep max calculator
+function percentage_1() {
 
-function caluculatePercentage() {
-    var num = document.getElementById("onerepmax").value;
-    var per = document.getElementById("per").value;
-    var result = (num / 100) * per;
-    document.getElementById("result").innerHTML = result;
+  // Method returns the element of percent id
+  var percent = document.getElementById("percent").value;
+
+  // Method returns the element of num id
+  var num = document.getElementById("num").value;
+  document.getElementById("value1")
+    .value = (num / 100) * percent;
 }
